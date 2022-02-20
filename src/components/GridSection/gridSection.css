@@ -1,0 +1,14 @@
+.gridItems {
+  background: linear-gradient(359deg, rgba(228, 239, 233, 0) 0%, #ecf8f1 6.25%);
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(13.5625rem, 1fr));
+  justify-items: center;
+  padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .gridItems {
+    padding: 5rem 6.4375rem 0 11.125rem;
+  }
+}

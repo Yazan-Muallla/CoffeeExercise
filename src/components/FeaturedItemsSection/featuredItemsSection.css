@@ -1,0 +1,28 @@
+.heroSection {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+
+.heroBanner {
+  flex: 1;
+}
+
+.flexItems {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    gap: 2.5rem;
+  }
+
+  .flexItems {
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}

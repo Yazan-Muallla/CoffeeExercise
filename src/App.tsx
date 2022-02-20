@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { FormPage } from './pages/FormPage'
+import { HomePage } from './pages/HomePage'
 
-export default App;
+import './App.css'
+import './assets/google-sans-cufonfonts/font.css'
+
+const App: React.FC = () =>
+  <Router>
+    <Route path="/form" component={FormPage} exact={true} />
+    <Route path="/" component={HomePage} exact={true} />
+  </Router>
+export default App

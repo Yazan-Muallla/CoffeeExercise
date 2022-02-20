@@ -1,0 +1,23 @@
+.addBtn {
+  background-color: var(--blue);
+  border: 0.0625rem solid var(--blue);
+  color: var(--white);
+}
+
+.deleteBtn {
+  background-color: var(--danger);
+  border: 0.0625rem solid var(--danger);
+  color: var(--white);
+}
+
+.editBtn {
+  background-color: var(--green);
+  border-radius: 0.625rem;
+  border: 0.0625rem solid var(--green);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1rem;
+  min-width: 6.25rem;
+  outline: none;
+  padding: 0.625rem;
+}
